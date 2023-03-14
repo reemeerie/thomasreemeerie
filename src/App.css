@@ -13,7 +13,7 @@
 }
 @font-face {
   font-family: RobotoBoldItalic;
-  src: url(/public/img/Roboto-Bold.ttf) format('truetype');
+  src: url(/public/img/Roboto-BoldItalic.ttf) format('truetype');
 }
 * {
   font-family: RobotoRegular, sans-serif;

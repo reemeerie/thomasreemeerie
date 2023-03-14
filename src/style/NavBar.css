@@ -10,13 +10,17 @@
 }
 
 .blackNav{
-    background-color: rgb(210, 210, 210);
+    background-color: rgb(0, 0, 0);
 }
 
 #navbar {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.navItems ul{
+    padding-left: 0px;
+    margin: 0;
 }
 
 #navbarBlack {
@@ -50,7 +54,7 @@
     text-decoration: none;
     font-size: 1rem;
     font-weight: 600;
-    color: rgb(28, 28, 28);
+    color: rgb(210, 210, 210);;
     transition: 0.3s ease-in-out;
 }
 
@@ -94,28 +98,54 @@
     color: black;
 }
 
-.TR {
-    width: 70px;
-    box-shadow: none;
+.tr {
+    font-size: 30px;
+    color: black;
+    font-family: robotoLightItalic;
+    font-weight: bold;
+}
+.blacktr{
+    color: rgb(210, 210, 210) !important;
+}
+.blacktr:visited{
+    color: rgb(210, 210, 210);
+}
+.blackNav a{
+    color: rgb(210, 210, 210);
+}
+.tr:visited{
+    color: black;
+}
+.defaultNav #home {
+    font-size: 1px;
+}
+.navItems{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-@media screen and (max-width: 769px) {
-    .TR {
-        width: 50px;
-        box-shadow: none;
+@media screen and (max-width: 800px) {
+    .defaultNav{
+        background-color: rgb(0, 0, 0);
+    }
+    .tr {
+        color: rgb(210, 210, 210);
+    }
+    .tr:visited {
+        color: rgb(210, 210, 210);;
     }
     #navbar {
         display: flex;
         flex-direction: column;
         align-items: flex-end;
-        justify-content:inherit;
+        justify-content: flex-start;
         position: absolute;
         top: 80px;
         right: -300px;
         width: 250px;
         height: 100vh;
-        background: rgb(70, 70, 70);
-        background:  rgba(12, 158, 221, 0);
+        background:  rgb(0, 0, 0);
         padding: 40px 0 0 10px;
         z-index: 4;
         transition: 0.3s ease-in-out;
@@ -124,13 +154,13 @@
         display: flex;
         flex-direction: column;
         align-items: flex-end;
-        justify-content:inherit;
+        justify-content:flex-start;
         position: absolute;
         top: 80px;
         right: -300px;
         width: 250px;
         height: 100vh;
-        background: rgb(210, 210, 210);
+        background: rgb(0, 0, 0);
         padding: 40px 0 0 10px;
         z-index: 4;
         transition: 0.3s ease-in-out;
@@ -148,10 +178,11 @@
         margin-bottom: 25px;
     }
     #navbar li a {
-        font-size: 14px;
+        font-size: 16px;
+        color: rgb(210, 210, 210);
     }
     #navbarBlack li a{
-        font-size: 14px;
+        font-size: 16px;
     }
     #mobile{
         display: block;
@@ -159,6 +190,7 @@
     #mobile i {
         font-size: 25px;
         cursor: pointer;
+        color: rgb(210, 210, 210);
     }
 }
 
@@ -171,9 +203,8 @@
     }
 }
 @media screen and (max-width: 450px) {
-    .TR {
-        width: 40px;
-        box-shadow: none;
+    .tr {
+        font-size: 25px;
     }
     .defaultNav{
         height: 70px;

@@ -3,12 +3,46 @@
     width: 100%;
     height: 80px;
 }
-
-.cont {
-    background-color: rgb(235, 235, 235);
+.skillsContainer{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    /* display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(50px, 100px)); */
+    margin-top: 30px;
+    /* justify-content: center; */
+}
+.skill {
+    background: #00000000;
+    border: none;
+    box-shadow: none;
+    /* padding: 10px; */
+    width: 100%;
+}
+.skillCont {
+    width: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.skillName {
+    margin-top: 7px;
+}
+.bigContainer{
     width: 100%;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(235, 235, 235);
+}
+.cont {
+    background-color: rgb(235, 235, 235);
+    width: 70%;
+    display: flex;
     padding-top: 20px;
+    justify-self: center;
 }
 .description {
     display: flex;
@@ -34,7 +68,7 @@ h2 {
     font-size: 17px;
     font-weight: 600;
     text-align: justify;
-    padding-top: 25px;
+    
 }
 .buton:visited {
     text-decoration: none;
@@ -51,6 +85,9 @@ h2 {
     transition: 0.3s ease-out;
     outline: none;
     text-decoration: none;
+}
+.butonContainer {
+    margin-top: 20px;
 }
 .buton:hover {
     box-shadow: inset 300px 0 0 0 rgb(70, 70, 70);
@@ -184,17 +221,67 @@ h2 {
     content: '50%';
 }
 
-@media (max-width:750px) {
+@media (max-width:800px) {
     .cont {
         flex-direction: column;
-     }
-     .contSkills {
+    }
+    .contSkills {
         padding-top: 60px;
+        width: 100%;
     }
      .description {
         width: 100%;
-     }
-     .contSkills {
+    }
+    .skillsContainer{
+        justify-content: center;
+    }
+    
+}
+@media (max-width:1200px) {
+    .skillCont{
+        width: 50px;
+    }
+    .cont {
+        width: 80%;
+    }
+    .skillsContainer{
+        gap: 40px;
+    }
+    .buton{
+        width: 200px;
+    }
+}
+@media (max-width: 650px) {
+    .cont {
+        width: 90%;
+    }
+    .skillCont{
+        width: 80px;
+    }
+    .skillsContainer{
+        gap: 20px;
+    }
+    
+}
+@media (max-width:500px) {
+    .cont{
         width: 100%;
-      }
+    }
+    .skillCont{
+        width: 50px;
+    }
+    .skillName{
+        font-size: 14px;
+    }
+    .skillsContainer {
+        gap: 40px;
+    }
+    .buton{
+        width: 100%;
+    }
+    /* .butonContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    } */
 }

@@ -10,38 +10,40 @@ const Contact = () => {
 
   return (
     <>
-        <div id='contact'></div>
         <div className='footerCont'>
+            <div className='bigContainer'>
+            <Projects/>
+            <div id='contact'></div>
             <div className="contactCont">
                 <h2>Contact</h2>
                 <p className='p2'>Contact me if you want us to work together</p>
                 <div className="iconsContainer">
                     <a href="mailto:thomasreemeerie0@gmail.com">
                     <div className='iconCont'>
-                        <MailIcon  className='icon'/>
-                        <p className='p2'><strong>Mail me</strong></p>
+                        <MailIcon  className='icon mail'/>
+                        <p className='p2'><strong>Mail</strong></p>
                     </div>
                     </a>
                     <a href="https://www.linkedin.com/in/thomas-reemeerie-20076122b/" target="_blank" rel='noreferrer'>
                     <div className='iconCont'>
-                        <InIcon  className='icon'/>
-                        <p className='p2'><strong>Contact me</strong></p>
+                        <InIcon  className='icon linkedin'/>
+                        <p className='p2'><strong>Linkedin</strong></p>
                     </div>
                     </a>
                     <a href="https://www.instagram.com/thomasreemeerie/" target="_blank" rel='noreferrer'>
                     <div className='iconCont'>
-                        <IgIcon  className='icon'/>
-                        <p className='p2'><strong>Follow me</strong></p>
+                        <IgIcon  className='icon instagram'/>
+                        <p className='p2'><strong>Instagram</strong></p>
                     </div>
                     </a>
                 </div>
             </div>
-            <Projects/>
-            <footer>
-                <p className='p3'>Copyright © 2022 - thomasreemeerie0@gmail.com</p>
-                <p className='p3'>All rights reserved</p>
-            </footer>
+            </div>
         </div>
+        <footer>
+            <p className='p3'>Copyright © 2022 - thomasreemeerie0@gmail.com</p>
+            <p className='p3'>All rights reserved</p>
+        </footer>
     </>
   )
 }

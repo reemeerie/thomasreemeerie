@@ -21,8 +21,8 @@ const NavBar = () => {
 
   return (
     <nav className={color ? 'defaultNav blackNav': 'defaultNav'}>
-        <a href="#home"><img src="/img/TR.png" alt="" className='TR'/></a>
-        <div className=''>
+        <a href="#home" className={color ? 'tr blacktr': 'tr'}>{/* <img src="/img/TR.png" alt="" className='TR'/> */}T. Reemeerie</a>
+        <div className='navItems'>
             <ul id={color ? 'navbarBlack' : 'navbar'} className={clicked ? '#navbar active' : '#navbar'}>
                 <li>
                     <a href="#home" /* className='active' */ onClick={()=> {setClicked(false)}}>Home</a>
@@ -34,10 +34,10 @@ const NavBar = () => {
                     <a href="#studies" onClick={()=> {setClicked(false)}}>Studies</a>
                 </li>
                 <li>
-                    <a href="#contact" onClick={()=> {setClicked(false)}}>Contact Me</a>
+                    <a href="#projects" onClick={()=> {setClicked(false)}}>Projects</a>
                 </li>
                 <li>
-                    <a href="#projects" onClick={()=> {setClicked(false)}}>Projects</a>
+                    <a href="#contact" onClick={()=> {setClicked(false)}}>Contact me</a>
                 </li>
             </ul>
         </div>
