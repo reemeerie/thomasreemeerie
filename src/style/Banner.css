@@ -51,21 +51,21 @@
     }
 }
 @media screen and (max-width: 450px) {
-    .desc{
+    .desc {
         font-size: 1.7rem;
     }
-    .desc2{
+    .desc2 {
         font-size: 1.2rem;
     }
-    .contPresentation{
+    .contPresentation {
         padding-bottom: 300px;
     }
-    .blackScreen{
+    .blackScreen {
         height: 100%;
     }
-    .presentation{
-        align-items: center;
-        justify-content: center;
+    .presentation {
+        align-items: flex-start;
         padding-bottom: 120px;
+        padding-right: 50px;
     }
 }
