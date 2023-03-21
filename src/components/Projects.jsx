@@ -8,7 +8,7 @@ const Projects = () => {
       <div className='projectsCont'>
           <h2>Projects</h2>
           <p className='descProjects p2' >
-              Here are some of my personal projects I've been working on, including an API and a front-end ecommerce
+            Here are some of my personal projects I've been working on, including a notes app, a landing page and an ecommerce
           </p>
           <div className='projects'>
             <a href="https://thesneakerstoretss.netlify.app/" target='_blank' rel='noreferrer'>

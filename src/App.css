@@ -1,26 +1,27 @@
 @font-face {
-  font-family: RobotoRegular;
-  font-display: swap;
-  src: url(/public/img/Roboto-Regular.ttf) format('truetype');
+  font-family: MontserratRegular;
+  src: url(/public/Montserrat/static/Montserrat-Regular.ttf) format('truetype');
 }
 @font-face {
-  font-family: RobotoLight;
-  src: url(/public/img/Roboto-Light.ttf) format('truetype');
+  font-family: MontserratLight;
+  src: url(/public/Montserrat/static/Montserrat-Light.ttf) format('truetype');
 }
 @font-face {
-  font-family: RobotoLightItalic;
-  src: url(/public/img/Roboto-LightItalic.ttf) format('truetype');
+  font-family: MontserratLightItalic;
+  src: url(/public/Montserrat/static/Montserrat-LightItalic.ttf) format('truetype');
 }
 @font-face {
-  font-family: RobotoBoldItalic;
-  src: url(/public/img/Roboto-BoldItalic.ttf) format('truetype');
+  font-family: MontserratBoldItalic;
+  src: url(/public/Montserrat/static/Montserrat-BoldItalic.ttf) format('truetype');
 }
+
 * {
-  font-family: RobotoRegular, sans-serif;
+  font-family: MontserratRegular, sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 html {
   scroll-behavior: smooth;
 }

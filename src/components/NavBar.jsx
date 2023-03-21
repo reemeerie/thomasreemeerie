@@ -3,24 +3,27 @@ import "../style/NavBar.css"
 
 const NavBar = () => {
 
-    //mobile nav
     const [clicked, setClicked] = useState(false)
+
     const handleClick = () => {
         setClicked(!clicked)
     }
 
     const [color, setColor] = useState(false)
+
     const handleColor = () => {
-        if (window.scrollY >= 150) {
+        if (window.scrollY >= 130) {
             setColor(true)
-        } else {
+        }
+        else{
             setColor(false)
         }
     }
+    
     window.addEventListener("scroll", handleColor)
 
   return (
-    <nav className={color ? 'defaultNav blackNav': 'defaultNav'}>
+    <nav id={clicked ? 'clicked' : ''} className={color ? 'defaultNav blackNav': 'defaultNav'}>
         <a href="#home" className={color ? 'tr blacktr': 'tr'}>{/* <img src="/img/TR.png" alt="" className='TR'/> */}T. Reemeerie</a>
         <div className='navItems'>
             <ul id={color ? 'navbarBlack' : 'navbar'} className={clicked ? '#navbar active' : '#navbar'}>
