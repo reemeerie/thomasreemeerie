@@ -53,10 +53,10 @@
 }
 @media screen and (max-width: 450px) {
     .desc{
-        font-size: 2rem;
+        font-size: 1.7rem;
     }
     .desc2{
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
     .contPresentation{
         padding-bottom: 300px;
@@ -65,9 +65,10 @@
         height: 100%;
     }
     .presentation{
-        align-items: flex-start;
+        align-items: center;
+        justify-content: center;
         padding-top: 0px;
-        padding-right: 10px;
+        /* padding-right: 10px; */
         padding-bottom: 120px;
     }
 }
