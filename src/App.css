@@ -1,0 +1,27 @@
+@font-face {
+  font-family: MontserratRegular;
+  src: url(/public/Montserrat/static/Montserrat-Regular.ttf) format('truetype');
+}
+@font-face {
+  font-family: MontserratLight;
+  src: url(/public/Montserrat/static/Montserrat-Light.ttf) format('truetype');
+}
+@font-face {
+  font-family: MontserratLightItalic;
+  src: url(/public/Montserrat/static/Montserrat-LightItalic.ttf) format('truetype');
+}
+@font-face {
+  font-family: MontserratBoldItalic;
+  src: url(/public/Montserrat/static/Montserrat-BoldItalic.ttf) format('truetype');
+}
+
+* {
+  font-family: MontserratRegular, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}

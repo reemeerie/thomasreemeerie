@@ -1,0 +1,160 @@
+#about {
+    background-color: #f2f2f2;
+    width: 100%;
+    height: 80px;
+}
+.skillsContainer{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 30px;
+}
+.skill {
+    background: #00000000;
+    border: none;
+    box-shadow: none;
+    width: 100%;
+}
+.skillCont {
+    width: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.skillName {
+    margin-top: 7px;
+}
+.bigContainer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f2f2f2;
+}
+.cont {
+    background-color: #f2f2f2;
+    width: 70%;
+    display: flex;
+    padding-top: 20px;
+    justify-self: center;
+}
+.description {
+    display: flex;
+    flex-direction: column;
+    padding-left: 40px;
+    padding-right: 40px;
+    width: 50%;
+    color: rgb(70, 70, 70);
+}
+h2 {
+    font-size: 22px;
+    font-weight: 900;
+    color: rgb(70, 70, 70);
+}
+.p1 {
+    font-family: MontserratLightItalic;
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 10px;
+
+}
+.p2 {
+    font-family: MontserratLight;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: justify;
+    margin-top: 10px;
+}
+.buton:visited {
+    text-decoration: none;
+    color: rgb(70, 70, 70);
+}
+.buton {
+    color: rgb(70, 70, 70);
+    height: 60px;
+    width: 300px;
+    border-radius: 4px;
+    border-color: rgb(70, 70, 70);
+    font-size: 1rem;
+    box-shadow: inset 0 0 0 0 rgb(70, 70, 70);
+    transition: 0.5s ease-out;
+    outline: none;
+    text-decoration: none;
+}
+.butonContainer {
+    margin-top: 20px;
+}
+.buton:hover {
+    box-shadow: inset 400px 0 0 0 rgb(70, 70, 70);
+    color: white;
+    cursor: pointer;
+}
+
+.contSkills {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+@media (max-width:800px) {
+    .cont {
+        flex-direction: column;
+    }
+    .contSkills {
+        padding-top: 60px;
+        width: 100%;
+    }
+     .description {
+        width: 100%;
+    }
+    .skillsContainer{
+        justify-content: center;
+    }
+    
+}
+@media (max-width:1200px) {
+    .skillCont{
+        width: 50px;
+    }
+    .cont {
+        width: 80%;
+    }
+    .skillsContainer{
+        gap: 40px;
+    }
+    .buton{
+        width: 200px;
+    }
+}
+@media (max-width: 650px) {
+    .cont {
+        width: 90%;
+    }
+    .skillCont{
+        width: 80px;
+    }
+    .skillsContainer{
+        gap: 20px;
+    }
+    
+}
+@media (max-width:500px) {
+    .cont{
+        width: 100%;
+    }
+    .skillCont{
+        width: 50px;
+    }
+    .skillName{
+        font-size: 14px;
+    }
+    .skillsContainer {
+        gap: 40px;
+    }
+    .buton{
+        width: 100%;
+    }
+}
