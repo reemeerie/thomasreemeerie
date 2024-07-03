@@ -8,10 +8,10 @@ const Banner = () => {
       <div className="contPresentation">
       <div className='blackScreen'></div>
             <div className="presentation">
-                <div className='noseQPasa'><h1 className='desc'>Thomas</h1>&nbsp;&nbsp;<h1 className='desc'>Reemeerie</h1></div>
-                <p className="desc2" >Web developer</p>
+                <h1 className='desc'>Thomas Reemeerie</h1>
+                <h1 className="desc"></h1>
+                <p className="desc2" >Frontend developer</p>
             </div>
-            
       </div>
     </>
   )

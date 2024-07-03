@@ -24,7 +24,7 @@ const NavBar = () => {
 
   return (
     <nav id={clicked ? 'clicked' : ''} className={color ? 'defaultNav blackNav': 'defaultNav'}>
-        <a href="#home" className={color ? 'tr blacktr': 'tr'}>{/* <img src="/img/TR.png" alt="" className='TR'/> */}T. Reemeerie</a>
+        <a href="#home" className={color ? 'tr blacktr': 'tr'}>{/* <img src="/img/TR.png" alt="" className='TR'/> */}</a>
         <div className='navItems'>
             <ul id={color ? 'navbarBlack' : 'navbar'} className={clicked ? '#navbar active' : '#navbar'}>
                 <li>
